@@ -11,3 +11,7 @@ jobs:
     steps:
       - name: Hello World
         run: echo "Hello World"
+      - name: List files in repository
+        run: |
+          echo "The Repository ${{ github.repository }} contains the following file:"
+          tree
